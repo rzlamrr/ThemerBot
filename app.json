@@ -1,0 +1,29 @@
+{
+    "name": "ThemerBot",
+    "description": "Create telegram theme with picture",
+    "keywords": [
+        "themerbot",
+        "telegram",
+        "nodejs",
+        "theme"
+    ],
+    "repository": "https://github.com/rzlamrr/ThemerBot",
+    "website": "https://github.com/rzlamrr",
+    "success_url": "https://t.me/CreamySecBot",
+    "stack": "container",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Get this value from https://t.me/BotFather",
+            "required": true},
+        "SENTRY_DSN": {
+            "description": "Get this value from https://sentry.io",
+            "required": false},
+        "IMAGES_PATH": {
+            "description": "Downloaded image location",
+            "value": "/tmp/ThemerBot",
+            "required": false}
+    },
+    "addons": [
+     {"plan": "heroku-redis"}
+    ]
+}

@@ -7,7 +7,7 @@ const Sentry = require(`@sentry/node`);
 const redis = require(`redis`);
 const debug = require(`debug`)(`themerbot:middleware:storage`);
 
-const client = redis.createClient();
+const client = redis.createClient(process.env.REDIS_URL);
 
 if (!env.LOCAL_API_ROOT) {
     mkdirp.sync(env.IMAGES_PATH);

@@ -2,8 +2,7 @@
 
 ## Instructions
 
--   Copy `.env.example` to `.env`
--   Run `npm start`
+[![Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rzlamrr/ThemerBot/tree/master)
 
 ## Translations
 
